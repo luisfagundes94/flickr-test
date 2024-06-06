@@ -1,4 +1,4 @@
-package com.luisfagundes.insightcodechalenge.ui.theme
+package com.luisfagundes.insightcodechalenge.designsystem.theme
 
 import androidx.compose.ui.graphics.Color
 

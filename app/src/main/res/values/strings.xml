@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">InsightCodeChalenge</string>
+    <string name="error_generic">Error fetching data</string>
+    <string name="retry">Try Again</string>
+    <string name="search">Search</string>
+    <string name="clear_search">Clear search</string>
+    <string name="search_photos">Search photos</string>
 </resources>
