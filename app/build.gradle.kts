@@ -3,12 +3,18 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.hilt)
     alias(libs.plugins.ksp)
+    alias(libs.plugins.compose.compiler)
+    alias(libs.plugins.secrets)
     id("kotlinx-serialization")
 }
 
 android {
     namespace = "com.luisfagundes.insightcodechalenge"
     compileSdk = 34
+
+    buildFeatures {
+        buildConfig = true
+    }
 
     defaultConfig {
         applicationId = "com.luisfagundes.insightcodechalenge"
@@ -52,6 +58,10 @@ android {
     }
 }
 
+secrets {
+    defaultPropertiesFileName = "api.properties"
+}
+
 dependencies {
 
     implementation(libs.androidx.core.ktx)
@@ -67,6 +77,7 @@ dependencies {
     implementation(libs.okhttp.logging)
     implementation(libs.retrofit.core)
     implementation(libs.retrofit.kotlin.serialization)
+    implementation(libs.kotlinx.serialization.json)
 
     // DI
     implementation(libs.hilt.android)
