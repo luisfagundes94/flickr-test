@@ -4,3 +4,4 @@
 - Caching with Room
 - Documentation
 - More Unit Tests
+- Details Screen
